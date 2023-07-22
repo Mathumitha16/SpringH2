@@ -1,12 +1,11 @@
-Given five files,
+The Project consists of 5 main files
 
-- `StudentController.java`
-- `StudentRepository.java`
-- `StudentH2Service.java`
-- `StudentRowMapper.java`
-- `Student.java`
+- `StudentRepository.java`: Create an `interface` containing required methods.
+- `StudentH2Service.java`: Update the service class with logic for managing student data.
+- `StudentController.java`: Create the controller class to handle HTTP requests.
+- `StudentRowMapper.java`: Create a class which implements the `Rowmapper Interface`.
 
-And also given a database file `school` which contains a `student` table. The `student` table initially contains details of 20 students. 
+The connected H2 database has a student table with the below structure. 
 
 #### Student Table
 
@@ -17,28 +16,7 @@ And also given a database file `school` which contains a `student` table. The `s
 |   gender    |  TEXT   |
 |  standard   | INTEGER |
 
-<SingleLineNote>
-
-Use only STUDENT as a table name in your code while writing queries.
-</SingleLineNote>
-
-### Completion Instructions
-
-- `Student.java`: `Student` class should contain the following attributes.
-
-    |  Attribute  |  Type  |
-    | :---------: | :----: |
-    |  studentId  |  int   |
-    | studentName | String |
-    |   gender    | String |
-    |  standard   |  int   |
-
-- `StudentRepository.java`: Create an `interface` containing required methods.
-- `StudentH2Service.java`: Update the service class with logic for managing student data.
-- `StudentController.java`: Create the controller class to handle HTTP requests.
-- `StudentRowMapper.java`: Create a class which implements the `Rowmapper Interface`.
-
-Implement the following APIs.
+the following APIs are implemented.
 
 ### API 1
 
@@ -195,5 +173,3 @@ Updates the details of a student in the `student` table based on the `studentId`
 #### Description:
 
 Deletes a student from the `student` table based on the `studentId`. 
-
-**Do not modify the code in `SchoolApplication.java`**
